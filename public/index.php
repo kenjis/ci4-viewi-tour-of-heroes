@@ -56,6 +56,9 @@ $app->initialize();
 $context = is_cli() ? 'php-cli' : 'web';
 $app->setContext($context);
 
+// Viewi
+\App\Adapters\Viewi::init($app);
+
 /*
  *---------------------------------------------------------------
  * LAUNCH THE APPLICATION

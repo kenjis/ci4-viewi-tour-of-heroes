@@ -2,6 +2,11 @@
 
 namespace Config;
 
+use App\Adapters\RawJsonResponse;
+use App\Models\Repository;
+use Components\Models\HeroModel;
+use Viewi\Common\JsonMapper;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -30,6 +35,54 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+
+// API
+$routes->get('/api/heroes', static function () {
+    $repository = new Repository(HeroModel::class);
+    $response   = new RawJsonResponse(config('App'));
+
+    return $response->setData($repository->Get())->withJsonHeader();
+});
+
+$routes->get('/api/heroes/(:num)', static function (int $id) {
+    $repository = new Repository(HeroModel::class);
+    $response   = new RawJsonResponse(config('App'));
+
+    return $response->setData($repository->GetById($id))->withJsonHeader();
+});
+
+$routes->post('/api/heroes', static function () {
+    // read the data
+    $inputContent = file_get_contents('php://input');
+    // parse
+    $stdObject = json_decode($inputContent, false);
+    // convert type
+    $hero       = JsonMapper::Instantiate(HeroModel::class, $stdObject);
+    $repository = new Repository(HeroModel::class);
+    $response   = new RawJsonResponse(config('App'));
+
+    return $response->setData($repository->Create($hero))->withJsonHeader();
+});
+
+$routes->put('/api/heroes/(:num)', static function (int $id) {
+    // read the data
+    $inputContent = file_get_contents('php://input');
+    // parse
+    $stdObject = json_decode($inputContent, false);
+    // convert type
+    $hero       = JsonMapper::Instantiate(HeroModel::class, $stdObject);
+    $repository = new Repository(HeroModel::class);
+    $response   = new RawJsonResponse(config('App'));
+
+    return $response->setData($repository->Update($hero))->withJsonHeader();
+});
+
+$routes->delete('/api/heroes/(:num)', static function (int $id) {
+    $repository = new Repository(HeroModel::class);
+    $response   = new RawJsonResponse(config('App'));
+
+    return $response->setData($repository->Delete($id))->withJsonHeader();
+});
 
 /*
  * --------------------------------------------------------------------

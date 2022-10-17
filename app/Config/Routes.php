@@ -34,7 +34,7 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+// $routes->get('/', 'Home::index');
 
 // API
 $routes->get('/api/heroes', static function () {
@@ -100,3 +100,6 @@ $routes->delete('/api/heroes/(:num)', static function (int $id) {
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
+
+// Viewi here, after all other routes
+\App\Adapters\Viewi::init(Services::codeigniter());

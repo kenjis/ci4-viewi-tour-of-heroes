@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeigniter4/CodeIgniter4.git",
-                "reference": "a04693132f5bfda2daf564abc612aba3a4ae27d9"
+                "reference": "258bc3e90ff35d5b63d6ede3000484a6ee85d748"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeigniter4/CodeIgniter4/zipball/a04693132f5bfda2daf564abc612aba3a4ae27d9",
-                "reference": "a04693132f5bfda2daf564abc612aba3a4ae27d9",
+                "url": "https://api.github.com/repos/codeigniter4/CodeIgniter4/zipball/258bc3e90ff35d5b63d6ede3000484a6ee85d748",
+                "reference": "258bc3e90ff35d5b63d6ede3000484a6ee85d748",
                 "shasum": ""
             },
             "require": {
@@ -120,7 +120,7 @@
                 "slack": "https://codeigniterchat.slack.com",
                 "issues": "https://github.com/codeigniter4/CodeIgniter4/issues"
             },
-            "time": "2022-10-15T03:52:53+00:00"
+            "time": "2022-10-17T07:50:41+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -460,21 +460,21 @@
         },
         {
             "name": "codeigniter/coding-standard",
-            "version": "v1.5.0",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodeIgniter/coding-standard.git",
-                "reference": "7c2344a0312eb182ae6409fe670de6d9845081e2"
+                "reference": "69daf39fa6058cead3981aeb9ec87e703e1a9ed7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CodeIgniter/coding-standard/zipball/7c2344a0312eb182ae6409fe670de6d9845081e2",
-                "reference": "7c2344a0312eb182ae6409fe670de6d9845081e2",
+                "url": "https://api.github.com/repos/CodeIgniter/coding-standard/zipball/69daf39fa6058cead3981aeb9ec87e703e1a9ed7",
+                "reference": "69daf39fa6058cead3981aeb9ec87e703e1a9ed7",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "friendsofphp/php-cs-fixer": "^3.11",
+                "friendsofphp/php-cs-fixer": "^3.12",
                 "nexusphp/cs-config": "^3.6",
                 "php": "^7.4 || ^8.0"
             },
@@ -510,7 +510,7 @@
                 "slack": "https://codeigniterchat.slack.com",
                 "source": "https://github.com/CodeIgniter/coding-standard"
             },
-            "time": "2022-09-13T05:27:06+00:00"
+            "time": "2022-10-15T15:43:46+00:00"
         },
         {
             "name": "codeigniter4/devkit",
@@ -1542,21 +1542,21 @@
         },
         {
             "name": "nexusphp/cs-config",
-            "version": "v3.6.0",
+            "version": "v3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NexusPHP/cs-config.git",
-                "reference": "59546a38b02a00d8bdc415a1ae5336f034b05270"
+                "reference": "ed3070c3335986da842dea1222835946c19b2894"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NexusPHP/cs-config/zipball/59546a38b02a00d8bdc415a1ae5336f034b05270",
-                "reference": "59546a38b02a00d8bdc415a1ae5336f034b05270",
+                "url": "https://api.github.com/repos/NexusPHP/cs-config/zipball/ed3070c3335986da842dea1222835946c19b2894",
+                "reference": "ed3070c3335986da842dea1222835946c19b2894",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "friendsofphp/php-cs-fixer": "^3.11",
+                "friendsofphp/php-cs-fixer": "^3.12",
                 "php": "^7.4 || ^8.0"
             },
             "conflict": {
@@ -1598,9 +1598,13 @@
                 {
                     "url": "https://www.paypal.me/paulbalandan",
                     "type": "custom"
+                },
+                {
+                    "url": "https://github.com/paulbalandan",
+                    "type": "github"
                 }
             ],
-            "time": "2022-09-02T03:01:27+00:00"
+            "time": "2022-10-15T16:12:57+00:00"
         },
         {
             "name": "nexusphp/tachycardia",

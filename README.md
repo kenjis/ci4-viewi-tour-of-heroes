@@ -42,3 +42,4 @@ Navigate to <http://localhost:8080/>.
 
 - https://www.codeigniter.com/
 - https://viewi.net/
+- https://github.com/kenjis/ci4-viewi-demo

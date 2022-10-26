@@ -6,6 +6,8 @@ This tutorial app comes from:
 - https://viewi.net/tutorial
 - https://github.com/ivanvoitovych/tour-of-heroes
 
+If you want to know CodeIgniter4 and Viewi, see [CodeIgniter4 Viewi Demo](https://github.com/kenjis/ci4-viewi-demo).
+
 ## How to Run
 
 ```console
@@ -40,6 +42,6 @@ Navigate to <http://localhost:8080/>.
 
 ## References
 
+- [CodeIgniter4 Viewi Demo](https://github.com/kenjis/ci4-viewi-demo)
 - https://www.codeigniter.com/
 - https://viewi.net/
-- https://github.com/kenjis/ci4-viewi-demo
